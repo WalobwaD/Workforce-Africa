@@ -6,16 +6,18 @@ import Jobs from './components/jobs/Jobs';
 import { Box } from '@mui/material';
 import data from "./job-data.json"
 import { SearchProvider } from './context/searchContext';
+import Title from './title/title';
 function App() {
   return (
     <SearchProvider jobs={data}>
-
       <ThemeProvider theme={theme}>
+      <NavBar />
         <Box sx={{
           display: 'flex',
-          flexDirection: 'column'
+          flexDirection: 'column',
+          justifyContent: 'center'
         }}>
-          <NavBar />
+          <Title/>
           <Jobs />
         </Box>
       </ThemeProvider>

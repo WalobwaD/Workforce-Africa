@@ -6,7 +6,6 @@ import { AppBar, Toolbar, Box } from "@mui/material"
 import {toolBar, image}from "./NavStyles"
 
 import SearchBar from './SearchBar/SearchBar';
-import theme from '../../context/themeContext';
 
 
 
