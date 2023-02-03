@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './App.scss';
+import NavBar from './components/NavBar/NavBar';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './context/themeContext';
+import Jobs from './components/jobs/Jobs';
+import { Box } from '@mui/material';
+import data from "./job-data.json"
+import { SearchProvider } from './context/searchContext';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SearchProvider jobs={data}>
+
+      <ThemeProvider theme={theme}>
+        <Box sx={{
+          display: 'flex',
+          flexDirection: 'column'
+        }}>
+          <NavBar />
+          <Jobs />
+        </Box>
+      </ThemeProvider>
+    </SearchProvider>
+
   );
 }
 
