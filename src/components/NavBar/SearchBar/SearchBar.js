@@ -13,7 +13,7 @@ const SearchBar = ()=> {
     }
     return (
         <Box sx={searchBox}>
-            <SearchIcon sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
+            <SearchIcon color="primary" sx={{ mr: 1, my: 0.5 }} />
             <TextField 
                 onChange={handleChange} 
                 label="Search for job title..." 
