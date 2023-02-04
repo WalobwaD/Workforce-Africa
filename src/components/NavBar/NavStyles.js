@@ -6,7 +6,7 @@ export const toolBar = {
   justifyContent: 'space-between',
 
   paddingX: {
-    mobile: 1,
+    mobile: 3,
     tablet: 3,
     laptop: 4
   },
@@ -15,7 +15,7 @@ export const toolBar = {
 export const image = {
 
   width : {
-    mobile: 110,
+    mobile: 120,
     tablet: 130,
     laptop: 170
   }

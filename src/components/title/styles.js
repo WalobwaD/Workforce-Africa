@@ -1,6 +1,6 @@
 const textStyles = {
     fontFamily: 'Josefin Sans, sans-serif',
-    marginTop: 3,
+    marginTop: 10,
 
     fontWeight: 900,
     fontSize: {
