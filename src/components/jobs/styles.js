@@ -30,6 +30,8 @@ const buttonBox = {
 const applyButton = {
     borderColor: '#FD510C',
     color: '#636365',
+    fontFamily: 'JoseFin Sans, sans-serif',
+
     '&:hover' : {
         backgroundColor: '#FD510C',
         opacity: 0.75,
@@ -58,6 +60,7 @@ const flexBox = {
 }
 
 const jobTitle = {
+    fontFamily: 'JoseFin Sans, sans-serif',
     fontWeight: 600,
     fontSize: {
         mobile: 20,
@@ -66,7 +69,21 @@ const jobTitle = {
     }
 }
 
+const jobLocation = {
+    fontFamily: 'Chathura, sans-serif',
+    fontSize: '1.6rem',
+    fontWeight: 900,
+
+}
+
+const jobDesc = {
+    fontFamily: 'JoseFin Sans, sans-serif',
+
+    fontWeight: 500
+}
 const requirementsLink = {
+    fontFamily: 'JoseFin Sans, sans-serif',
+    fontWeight: 400,
     color: '#636365',
     '&:hover' : {
         color: '#FD510C'
@@ -95,6 +112,8 @@ const requirementBox = {
 }
 
 export {
+    jobDesc,
+    jobLocation,
     requirementsLink,
     requirementsText, 
     paperStyles, 

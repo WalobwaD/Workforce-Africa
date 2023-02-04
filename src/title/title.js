@@ -1,10 +1,11 @@
 import { Typography } from "@mui/material";
+import { textStyles, innerStyle } from "./styles";
 
 const Title = ()=> (
     
-    <Typography variant="h6" component='h1' align='center'>
+    <Typography sx={textStyles} color='secondary' variant="h6" component='h1' align='center'>
         Land your 
-        <span> Dream Job </span> 
+        <Typography color='primary' sx={innerStyle} variant='h5' display='inline' component='span'> Dream Job </Typography> 
         with us!
     </Typography>
 )

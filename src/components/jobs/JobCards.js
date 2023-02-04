@@ -3,7 +3,7 @@ import { useState } from "react";
 
 //import material ui and styles
 import { Button, Grid, Link, Backdrop, Box, Paper, Typography} from "@mui/material";
-import {paperStyles, buttonBox, applyButton, backDrop, flexBox, jobTitle, requirementsLink} from "./styles"
+import {paperStyles, buttonBox, applyButton, backDrop, flexBox, jobTitle, requirementsLink, jobLocation, jobDesc} from "./styles"
 
 //JobRequirements component import
 import JobRequirements from "./JobRequirements";
@@ -27,18 +27,18 @@ const Jobs = ({job})=> {
             <Paper elevation={5} sx={paperStyles}>
                 <Box paddingX={3} sx={flexBox}>
 
-                    <Typography variant="h5" content="h3" align='left' mt={2} sx={jobTitle}>
+                    <Typography color='secondary' variant="h5" content="h3" align='left' mt={2} sx={jobTitle}>
                         {job.title}
                     </Typography>
 
                     <Box sx={flexBox}>
-                        <Typography variant="body2" content="p">
+                        <Typography color='primary' sx={jobLocation} variant="body2" content="p">
                             {job.location}
                         </Typography>
                     </Box>
 
                      <Box sx={flexBox}>
-                        <Typography variant="body1" content="p" paragraph= {true} align='left'>
+                        <Typography sx={jobDesc} color='secondary' variant="body1" content="p" paragraph= {true} align='left'>
                             {job.description}
                         </Typography>
                     </Box>
