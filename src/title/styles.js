@@ -8,7 +8,11 @@ const textStyles = {
         tablet: '2rem',
         laptop: '3.5rem'
     },
-    width: '40%',
+    width: {
+        mobile: '50%',
+        tablet: '40%',
+        laptop: '40%'
+    },
     lineHeight: 1.2
 
 

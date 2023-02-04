@@ -98,8 +98,8 @@ const requirementsText = {
     opacity: 1,
     fontWeight: 600,
     fontSize: {
-        mobile: '0.7rem',
-        tablet: '1rem',
+        mobile: '0.78rem',
+        tablet: '1.2rem',
         laptop: '1.2rem'
     }
 

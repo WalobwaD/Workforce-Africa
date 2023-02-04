@@ -58,7 +58,7 @@ const Jobs = ({job})=> {
                     <Backdrop sx={backDrop} open={open} onClick={handleClose}>
                         <Typography sx={jobTitle} color='secondary' component='h2' variant='h5'>{job.title}</Typography>
                         <Box color='primary' sx={lineBreak}></Box>
-                        <Typography variant="h6" component='p'>Position Requirements:</Typography>
+                        <Typography variant="overline" component='p'>Position Requirements:</Typography>
 
                         <Box sx={flexBox}>
                             {job.requirements.map((requirement, index)=>(
