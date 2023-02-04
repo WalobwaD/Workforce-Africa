@@ -1,6 +1,16 @@
-import { Button, Grid, Link } from "@mui/material";
+import { Button, Grid, Link, Backdrop} from "@mui/material";
+import JobRequirements from "./JobRequirements";
 import {Box, Paper, Typography} from "@mui/material"
+import { useState } from "react";
 const Jobs = ({job})=> {
+    const [open, setOpen] = useState(false);
+    const handleClose = () => {
+        setOpen(false);
+      };
+      const handleToggle = () => {
+        setOpen(!open);
+      };
+
     return (
         
         <Grid item xs={1} align='center' sx={{marginTop:5}}>
@@ -16,11 +26,11 @@ const Jobs = ({job})=> {
                             mobile : '80%',
                             tablet: '70%',
                             laptop: 400
-
                         }
                     }}
                     >
-                    <Box paddingX={3} sx={{
+                    <Box paddingX={3} 
+                        sx={{
                         display: 'flex',
                         alignItem: 'center',
                         justifyContent: 'center',
@@ -82,6 +92,7 @@ const Jobs = ({job})=> {
                         marginBottom: 3
                     }}>
                         <Link 
+                            onClick ={handleToggle}
                             sx={{
                                 color: '#636365',
                                 '&:hover' : {
@@ -104,6 +115,23 @@ const Jobs = ({job})=> {
                         >
                             Apply Now
                         </Button>
+                        <Backdrop
+                            sx={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                flexDirection: 'column', 
+                                color: '#fff',
+                                backgroundColor: '#FBB601',
+                                zIndex: 1
+                            }}
+                            open={open}
+                            onClick={handleClose}
+                        >
+                            {job.requirements.map((requirement, index)=>(
+                                <JobRequirements requirements={requirement} key={index}/>
+                            ))}
+                        </Backdrop>
 
                     </Box>
                 </Paper>
