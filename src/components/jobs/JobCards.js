@@ -4,7 +4,7 @@ import { useState } from "react";
 //import material ui and styles
 import { Button, Grid, Link, Backdrop, Box, Paper, Typography} from "@mui/material";
 import {paperStyles, buttonBox, applyButton, backDrop, flexBox, jobTitle, requirementsLink, jobLocation, jobDesc} from "./styles"
-
+import ArrowCircleRightSharpIcon from '@mui/icons-material/ArrowCircleRightSharp';
 //JobRequirements component import
 import JobRequirements from "./JobRequirements";
 
@@ -47,7 +47,7 @@ const Jobs = ({job})=> {
                 <Box sx={buttonBox}>
 
                     <Link onClick ={handleToggle} sx={requirementsLink} component='button'>
-                        Requirements
+                        <>Requirements</><ArrowCircleRightSharpIcon color="primary"/>
                     </Link>
 
                     <Button sx={applyButton} variant="outlined">

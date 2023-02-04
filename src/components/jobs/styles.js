@@ -81,8 +81,12 @@ const jobDesc = {
     fontWeight: 500
 }
 const requirementsLink = {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'soave-even',
     fontFamily: 'JoseFin Sans, sans-serif',
     fontWeight: 400,
+    fontSize: '0.9rem',
     color: '#636365',
     '&:hover' : {
         color: '#FD510C'
