@@ -1,6 +1,6 @@
 //components and style imports
 import NavBar from './components/NavBar/NavBar';
-import Title from './title/title';
+import Title from './components/title/title';
 import Jobs from './components/jobs/Jobs';
 import { flexBox } from './components/jobs/styles';
 

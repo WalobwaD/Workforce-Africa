@@ -5,7 +5,11 @@ export const toolBar = {
   alignItems: 'center',
   justifyContent: 'space-between',
 
-  paddingX: 2,
+  paddingX: {
+    mobile: 1,
+    tablet: 3,
+    laptop: 4
+  },
   paddingY: 1
 }
 export const image = {

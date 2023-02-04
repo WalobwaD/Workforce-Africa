@@ -4,7 +4,7 @@ import SearchIcon from "@mui/icons-material/Search"
 import { Box, TextField } from "@mui/material"
 import {searchBox} from "./styles"
 
-import { SearchContext } from "../../../context/searchContext"
+import { SearchContext } from "../../context/searchContext"
 
 const SearchBar = ()=> {
     const {searchTerm, setSearch} = useContext(SearchContext)
@@ -22,6 +22,7 @@ const SearchBar = ()=> {
                 variant="standard" 
                 autoFocus= {true}
                 color='primary'
+                fullWidth={true}
         />
       </Box>
     )
