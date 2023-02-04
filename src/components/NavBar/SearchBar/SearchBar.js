@@ -13,16 +13,15 @@ const SearchBar = ()=> {
     }
     return (
         <Box sx={searchBox}>
-            <SearchIcon color="primary" sx={{ mr: 1, my: 0.5 }} />
+            <SearchIcon color="primary" sx={{ boxShadow: '0 0 10px #FD510C', border:'none',mr: 1, my: 0.5 }} />
             <TextField 
                 onChange={handleChange} 
                 label="Search for job title..." 
                 value={searchTerm}
                 id="input-with-sx" 
                 variant="standard" 
-                sx= {{color:'#FD510C'}}
                 autoFocus= {true}
-                color="primary"
+                color='primary'
         />
       </Box>
     )
