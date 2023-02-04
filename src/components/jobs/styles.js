@@ -93,6 +93,7 @@ const requirementsLink = {
     }
 }
 const requirementsText = {
+    fontFamily: 'Josefin Sans, sans-serif',
     marginLeft: 1,
     opacity: 1,
     fontWeight: 600,
@@ -104,6 +105,15 @@ const requirementsText = {
 
 }
 
+const lineBreak = {
+    width: {
+        mobile: 70,
+        tablet: 80,
+        laptop: 100
+    },
+    height: 2,
+    backgroundColor: '#FD510C'
+}
 const requirementBox = {
     display: 'flex',
     alignItems: 'center',
@@ -115,6 +125,7 @@ const requirementBox = {
 }
 
 export {
+    lineBreak,
     jobDesc,
     jobLocation,
     requirementsLink,

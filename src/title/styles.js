@@ -4,7 +4,7 @@ const textStyles = {
 
     fontWeight: 900,
     fontSize: {
-        mobile: '1.3rem',
+        mobile: '1.5rem',
         tablet: '2rem',
         laptop: '3.5rem'
     },
@@ -17,7 +17,7 @@ const textStyles = {
 const innerStyle = {
     fontFamily: 'Luckiest Guy, cursive',
     fontSize: {
-        mobile: '0.9rem',
+        mobile: '1rem',
         tablet: '1.2rem',
         laptop: '2rem'
     }

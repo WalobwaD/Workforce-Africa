@@ -3,7 +3,7 @@ import { useState } from "react";
 
 //import material ui and styles
 import { Button, Grid, Link, Backdrop, Box, Paper, Typography} from "@mui/material";
-import {paperStyles, buttonBox, applyButton, backDrop, flexBox, jobTitle, requirementsLink, jobLocation, jobDesc} from "./styles"
+import {paperStyles, buttonBox, applyButton, backDrop, flexBox, jobTitle, requirementsLink, jobLocation, jobDesc, lineBreak} from "./styles"
 import ArrowCircleRightSharpIcon from '@mui/icons-material/ArrowCircleRightSharp';
 //JobRequirements component import
 import JobRequirements from "./JobRequirements";
@@ -30,6 +30,7 @@ const Jobs = ({job})=> {
                     <Typography color='secondary' variant="h5" content="h3" align='left' mt={2} sx={jobTitle}>
                         {job.title}
                     </Typography>
+                    <Box sx={lineBreak}></Box>
 
                     <Box sx={flexBox}>
                         <Typography color='primary' sx={jobLocation} variant="body2" content="p">
@@ -55,7 +56,9 @@ const Jobs = ({job})=> {
                     </Button>
 
                     <Backdrop sx={backDrop} open={open} onClick={handleClose}>
-                        <Typography>{job.title}</Typography>
+                        <Typography sx={jobTitle} color='secondary' component='h2' variant='h5'>{job.title}</Typography>
+                        <Box color='primary' sx={lineBreak}></Box>
+                        <Typography variant="h6" component='p'>Position Requirements:</Typography>
 
                         <Box sx={flexBox}>
                             {job.requirements.map((requirement, index)=>(
