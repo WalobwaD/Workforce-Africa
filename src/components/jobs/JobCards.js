@@ -114,7 +114,8 @@ const Jobs = ({job})=> {
                                     backgroundColor: '#FD510C',
                                     opacity: 0.75,
                                     borderColor: 'white',
-                                    color: 'white'
+                                    color: 'white',
+                                    boxShadow: '0 0 15px #FD510C'
                                 }
                             }}
                                 variant="outlined"
