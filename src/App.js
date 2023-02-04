@@ -15,7 +15,8 @@ function App() {
         <Box sx={{
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'center'
+          justifyContent: 'center',
+          alignItems: 'center',
         }}>
           <Title/>
           <Jobs />
