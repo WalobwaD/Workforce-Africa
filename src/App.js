@@ -1,26 +1,35 @@
-import './App.scss';
+//components and style imports
 import NavBar from './components/NavBar/NavBar';
-import { ThemeProvider } from '@mui/material/styles';
-import theme from './context/themeContext';
-import Jobs from './components/jobs/Jobs';
-import { Box } from '@mui/material';
-import data from "./job-data.json"
-import { SearchProvider } from './context/searchContext';
 import Title from './title/title';
+import Jobs from './components/jobs/Jobs';
+import { flexBox } from './components/jobs/styles';
+
+//mui imports
+import { Box } from '@mui/material';
+import { ThemeProvider } from '@mui/material/styles';
+
+//context providers imports
+import theme from './context/themeContext';
+import { SearchProvider } from './context/searchContext';
+
+//job data imports
+import data from "./job-data.json"
+
+
 function App() {
+
   return (
+
     <SearchProvider jobs={data}>
       <ThemeProvider theme={theme}>
-      <NavBar />
-        <Box sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}>
+
+        {/* comoponents */}
+        <NavBar />
+        <Box sx={flexBox}>
           <Title/>
           <Jobs />
         </Box>
+
       </ThemeProvider>
     </SearchProvider>
 
