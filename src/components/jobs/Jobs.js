@@ -1,11 +1,17 @@
-import { SearchContext } from "../../context/searchContext"
-import {Grid} from "@mui/material"
 import { useContext } from "react"
+
+import {Grid} from "@mui/material"
+
+import { SearchContext } from "../../context/searchContext"
 import JobCards from "./JobCards"
+
 const Jobs = ()=> {
+
     const {searchTerm, jobs} = useContext(SearchContext)
+
     return (
         <Grid container lg={12} item spacing={3} mb={5} sx={{ justifyContent: 'center'}}>
+
             {jobs.filter((job)=> {
                 if (!searchTerm || job.title.toLowerCase().includes(searchTerm.toLowerCase())) {
                     return job;
@@ -15,6 +21,7 @@ const Jobs = ()=> {
                    <JobCards job = {filteredJob} key={filteredJob.id}/>
                 )
             })}
+            
         </Grid>
     )
 }
