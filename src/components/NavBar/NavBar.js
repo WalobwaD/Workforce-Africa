@@ -8,19 +8,13 @@ import {toolBar, image}from "./NavStyles"
 import SearchBar from './SearchBar/SearchBar';
 
 
-
 export default function NavBar() {
   return (
+    
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar sx={toolBar}>
-          <Box
-              component="img"
-              src={logo}
-              alt='logo'
-              sx={image}
-          />
-
+          <Box component="img" src={logo} alt='logo' sx={image}/>
           <SearchBar />
         </Toolbar>
       </AppBar>
