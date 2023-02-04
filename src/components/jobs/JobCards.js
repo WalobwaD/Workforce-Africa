@@ -65,6 +65,9 @@ const Jobs = ({job})=> {
                             <JobRequirements requirements={requirement} key={index}/>
                             ))}
                         </Box>
+                        <Link onClick ={handleToggle} sx={requirementsLink} component='button'>
+                        <>APPLY</><ArrowCircleRightSharpIcon color="primary"/>
+                        </Link>
 
                     </Backdrop>
 
