@@ -4,7 +4,7 @@ const textStyles = {
 
     fontWeight: 900,
     fontSize: {
-        mobile: '1rem',
+        mobile: '1.3rem',
         tablet: '2rem',
         laptop: '3.5rem'
     },

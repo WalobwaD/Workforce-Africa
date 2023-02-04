@@ -77,7 +77,6 @@ const jobLocation = {
 }
 
 const jobDesc = {
-    fontFamily: 'JoseFin Sans, sans-serif',
 
     fontWeight: 500
 }
