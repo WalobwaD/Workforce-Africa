@@ -16,7 +16,12 @@ const Jobs = ({job})=> {
         <Grid item xs={1} align='center' sx={{marginTop:5}}>
                 <Paper
                     elevation={5}
+
                     sx={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        flexDirection: 'column',
                         height: {
                             mobile: '100%',
                             tablet: 300,
@@ -88,7 +93,8 @@ const Jobs = ({job})=> {
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'space-between',
-                        paddingX: 1,
+                        width: '100%',
+                        paddingX: 3,
                         marginBottom: 3
                     }}>
                         <Link 
@@ -120,17 +126,26 @@ const Jobs = ({job})=> {
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
-                                flexDirection: 'column', 
-                                color: '#fff',
-                                backgroundColor: '#FBB601',
+                                flexDirection: 'column',
+                                alignSelf: 'center', 
+                                color: 'white',
+                                backgroundColor: 'rgba(251, 182, 1, 0.9)',
                                 zIndex: 1
                             }}
                             open={open}
                             onClick={handleClose}
                         >
+                            <Typography>{job.title}</Typography>
+                            <Box sx={{
+                                display: 'flex',
+                                alignItems:'center',
+                                justifyContent:'flex-start',
+                                flexDirection: 'column'
+                            }}>
                             {job.requirements.map((requirement, index)=>(
                                 <JobRequirements requirements={requirement} key={index}/>
                             ))}
+                            </Box>
                         </Backdrop>
 
                     </Box>
