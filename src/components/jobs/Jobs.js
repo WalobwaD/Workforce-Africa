@@ -5,6 +5,7 @@ import {Grid} from "@mui/material"
 import { SearchContext } from "../../context/searchContext"
 import JobCards from "./JobCards"
 
+
 const Jobs = ()=> {
 
     const {searchTerm, jobs} = useContext(SearchContext)

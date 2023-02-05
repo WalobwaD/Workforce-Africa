@@ -37,7 +37,7 @@ const NavLinks =()=>{
                             </Box>
                             <Box
                             component={Link}
-                            to='/search'
+                            to='/'
                             sx={{cursor: 'pointer'}}
                             >
                                 <ScreenSearchDesktopIcon color='primary'/>
