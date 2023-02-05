@@ -11,7 +11,7 @@ const NavLinks =()=>{
     return (
         <>
             {currentUser ? 
-                    <Box sx={linkStyle}>
+                <Box sx={linkStyle}>
                     <Box 
                     component={Link}
                     to= '/'
@@ -20,32 +20,30 @@ const NavLinks =()=>{
                     </Box>
                     <LogOut />
                     <Box
-                            component={Link}
-                            to='/search'
-                            sx={{cursor: 'pointer'}}
-                            >
-                                <ScreenSearchDesktopIcon color='primary'/>
+                        component={Link}
+                        to='/search'
+                        sx={{cursor: 'pointer'}}
+                        >
+                        <ScreenSearchDesktopIcon color='primary'/>
 
                     </Box>    
                 </Box> : 
-                            <Box sx={linkStyle}>
-                            <Box 
+                    <Box sx={linkStyle}>
+                        <Box 
                             component={Link}
                             to= '/'
                             >
-                                <HomeIcon color="primary" />
-                            </Box>
-                            <Box
+                            <HomeIcon color="primary" />
+                        </Box>
+                        <Box
                             component={Link}
                             to='/'
                             sx={{cursor: 'pointer'}}
                             >
-                                <ScreenSearchDesktopIcon color='primary'/>
-
-                            </Box>
-            
+                            <ScreenSearchDesktopIcon color='primary'/>
+                        </Box>
                 </Box>    
-        }
+            }
 
         </>
 
