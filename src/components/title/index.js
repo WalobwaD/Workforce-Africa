@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import SearchBar from '../SearchBar/SearchBar';
+import SearchBar from '../SearchBar';
 
 import { textStyles, innerStyle } from "./styles";
 

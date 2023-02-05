@@ -1,22 +1,22 @@
 //components and style imports
-import NavBar from './components/NavBar/NavBar';
-import Title from './components/title/title';
-import Jobs from './components/jobs/Jobs';
-import { flexBox } from './components/jobs/styles';
+import NavBar from '../../components/NavBar/NavBar';
+import Title from '../../components/Title';
+import Jobs from '../../components/jobs/Jobs';
+import { flexBox } from '../../components/jobs/styles';
 
 //mui imports
 import { Box } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 
 //context providers imports
-import theme from './context/themeContext';
-import { SearchProvider } from './context/searchContext';
+import theme from '../../context/themeContext';
+import { SearchProvider } from '../../context/searchContext';
 
 //job data imports
-import data from "./job-data.json"
+import data from "../../job-data.json"
 
 
-function App() {
+function JobSearch() {
 
   return (
 
@@ -36,4 +36,4 @@ function App() {
   );
 }
 
-export default App;
+export default JobSearch;
