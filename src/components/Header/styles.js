@@ -19,7 +19,9 @@ const textStyles = {
 }
 
 const innerStyle = {
-    fontFamily: 'Luckiest Guy, cursive',
+    fontFamily: 'Josefin Sans, sans-serif',
+    textTransform: 'uppercase',
+    fontWeight: 700,
     fontSize: {
         mobile: '1rem',
         tablet: '1.2rem',
