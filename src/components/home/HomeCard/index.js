@@ -1,9 +1,15 @@
 import { Typography, Box, Paper } from "@mui/material"
 import {paperStyles, paperWrap, subtitleStyle, title} from "./styles"
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+import {motion} from "framer-motion"
 const HomeCard =()=>{
     return (
-        <Box sx={paperWrap}>
+        <Box 
+            component={motion.div}
+            initial={{ opacity: 0.2}}
+            transition={{duration:2}}
+            whileInView={{ opacity: 1 }}
+            sx={paperWrap}>
             <Paper elevation={8} sx={paperStyles}>
                 <Box>
                     <Typography sx={title} variant='h4' component='h2' >Learn More About Us</Typography>

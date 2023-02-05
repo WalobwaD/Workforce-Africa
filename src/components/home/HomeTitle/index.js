@@ -4,13 +4,19 @@ import SearchLink from "../SearchLink";
 import SignIn from "../../../auth/SignIn";
 import { useContext } from "react";
 import { SignInContext } from "../../../context/googleSignInContext";
+import {motion} from "framer-motion"
 
 const HomeTitle =()=> {
     const {currentUser} = useContext(SignInContext)
     return (
         <>
         {currentUser?         
-            <Box sx={titleWrap}>
+            <Box 
+            component={motion.div}
+            initial={{x:-100}}
+            transition={{duration:2}}
+            animate={{x:0}}
+            sx={titleWrap}>
                 <Typography color='primary' sx={title} variant='h2' component='h1'>
                     Welcome To WorkForce Africa
                 </Typography>

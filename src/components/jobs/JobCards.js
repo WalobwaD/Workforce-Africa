@@ -7,6 +7,7 @@ import {paperStyles, buttonBox, applyButton, backDrop, flexBox, jobTitle, requir
 import ArrowCircleRightSharpIcon from '@mui/icons-material/ArrowCircleRightSharp';
 //JobRequirements component import
 import JobRequirements from "./JobRequirements";
+import {motion} from "framer-motion"
 
 
 const Jobs = ({job})=> {
@@ -24,7 +25,12 @@ const Jobs = ({job})=> {
     return (
         
         <Grid item xs={1} align='center' sx={{marginTop:5}}>
-            <Paper elevation={5} sx={paperStyles}>
+            <Paper 
+                component={motion.div}
+                initial={{y:1000}}
+                transition={{duration:1}}
+                animate={{y:0}}
+                elevation={5} sx={paperStyles}>
                 <Box paddingX={3} sx={flexBox}>
 
                     <Typography color='secondary' variant="h5" content="h3" align='left' mt={2} sx={jobTitle}>
