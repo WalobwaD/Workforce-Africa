@@ -12,13 +12,25 @@ const iconBox ={
 }
 
 const icon = {
-    fontSize: 60
+    fontSize: {
+        mobile: 45,
+        tablet: 70,
+        laptop: 60
+    }
 }
 
 const textBox = {
     backgroundColor: '#636365',
-    marginLeft: -2.5,
-    padding: 1,
+    marginLeft: {
+        mobile: -2,
+        tablet: -2.2,
+        laptop: -2.5
+    },
+    padding: {
+        mobile: 0.9,
+        tablet: 0.9,
+        laptop: 1
+    },
     borderRadius: '0 21px 21px 0',
     transition: '0.3s',
     '&:hover': {
@@ -30,8 +42,14 @@ const textBox = {
 }
 
 const searchText = {
+    fontFamily: 'Josefin Sans, sans-serif',
     marginLeft: 3,
     marginRight: 2,
+    fontSize: {
+        mobile: '0.7rem',
+        tablet: '0.8rem',
+        laptop: '1rem'
+    }
 
 }
 export {

@@ -1,8 +1,13 @@
 const linkStyle = {
     display: 'flex',
     alignItems: 'center',
-    fontFamily: 'JoseFin Sans, sans-serif',
-
+    '> *' :{
+        marginX: {
+            mobile: 2,
+            tablet: 3,
+            laptop:4
+        }
+    }
 
 }
 

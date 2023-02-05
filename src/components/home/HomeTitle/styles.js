@@ -1,3 +1,9 @@
+const flexBox = {
+    display:'flex', 
+    alignItems: 'center', 
+    justifyContent:'space-even'
+}
+
 const titleWrap = {
     marginTop: 10,
     alignSelf: {
@@ -38,5 +44,7 @@ const text = {
 }
 export {
     titleWrap,
-    title
+    title,
+    text,
+    flexBox
 }

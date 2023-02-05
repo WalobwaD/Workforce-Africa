@@ -10,7 +10,7 @@ const SearchLink = ()=> {
                     <ArrowCircleRightIcon sx={icon} color='primary' />
                 </Box>
                 <Box sx={textBox}>
-                    <Typography sx={searchText} >Start Searching</Typography>
+                    <Typography sx={searchText} >Search </Typography>
                 </Box>
             </Box>
         </Link>

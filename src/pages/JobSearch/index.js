@@ -14,24 +14,25 @@ import { SearchProvider } from '../../context/searchContext';
 
 //job data imports
 import data from "../../job-data.json"
-import { UserAuthContextProvider } from "./context/UserAuthContext";
+import { SignInProvider } from '../../context/googleSignInContext';
+
 
 
 function JobSearch() {
 
-  return (
 
-    <UserAuthContextProvider>
+  return (
+    <SignInProvider>
       <SearchProvider jobs={data}>
         <ThemeProvider theme={theme}>
           <NavBar />
           <Box sx={flexBox}>
-            <Title/>
+            <Header/>
             <Jobs />
           </Box>
         </ThemeProvider>
       </SearchProvider>
-    </UserAuthContextProvider>
+    </SignInProvider>
 
 
   );

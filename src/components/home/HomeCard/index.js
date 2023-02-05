@@ -6,7 +6,7 @@ const HomeCard =()=>{
         <Box sx={paperWrap}>
             <Paper elevation={8} sx={paperStyles}>
                 <Box>
-                    <Typography sx={title} variant='h4' component='h2' >About WorkForce Africa</Typography>
+                    <Typography sx={title} variant='h4' component='h2' >Learn More About Us</Typography>
                 </Box>
                 <Box>
                     <Typography sx={subtitleStyle} color='secondary' variant='subtitle1' component='h6'>
