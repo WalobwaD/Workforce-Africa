@@ -1,6 +1,6 @@
 //components and style imports
 import NavBar from '../../components/NavBar/NavBar';
-import Title from '../../components/Title/Title';
+import Header from '../../components/Header';
 import Jobs from '../../components/jobs/Jobs';
 import { flexBox } from '../../components/jobs/styles';
 
@@ -14,24 +14,25 @@ import { SearchProvider } from '../../context/searchContext';
 
 //job data imports
 import data from "../../job-data.json"
+import { UserAuthContextProvider } from "./context/UserAuthContext";
 
 
 function JobSearch() {
 
   return (
 
-    <SearchProvider jobs={data}>
-      <ThemeProvider theme={theme}>
+    <UserAuthContextProvider>
+      <SearchProvider jobs={data}>
+        <ThemeProvider theme={theme}>
+          <NavBar />
+          <Box sx={flexBox}>
+            <Title/>
+            <Jobs />
+          </Box>
+        </ThemeProvider>
+      </SearchProvider>
+    </UserAuthContextProvider>
 
-        {/* comoponents */}
-        <NavBar />
-        <Box sx={flexBox}>
-          <Title/>
-          <Jobs />
-        </Box>
-
-      </ThemeProvider>
-    </SearchProvider>
 
   );
 }
