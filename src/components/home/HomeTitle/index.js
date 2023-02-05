@@ -1,10 +1,11 @@
+import { useContext } from "react";
 import { Typography, Box } from "@mui/material"
+import {motion} from "framer-motion"
+
 import { title, titleWrap, flexBox } from "./styles";
 import SearchLink from "../SearchLink";
 import SignIn from "../../../auth/SignIn";
-import { useContext } from "react";
 import { SignInContext } from "../../../context/googleSignInContext";
-import {motion} from "framer-motion"
 
 const HomeTitle =()=> {
     const {currentUser} = useContext(SignInContext)

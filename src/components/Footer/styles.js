@@ -1,3 +1,22 @@
+const email = {
+    fontFamily: 'Josefin Sans, sans-serif',
+    fontSize: {
+        mobile: '0.8rem',
+        tablet: '0.9rem',
+        laptop: '1rem',
+    },
+    marginLeft: {
+        mobile: 0,
+        tablet: 0,
+        laptop: 5
+    },
+    fontWeight: 500,
+    marginTop: {
+        mobile: 3,
+        tablet: 0,
+        laptop: 0
+    }
+}
 const iconWrap = {
     display: 'flex',
     alignItems: 'center',
@@ -77,5 +96,6 @@ export {
     iconWrap, 
     boxWrap,
     image,
-    paperStyles
+    paperStyles,
+    email
 }

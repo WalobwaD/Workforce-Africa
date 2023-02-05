@@ -1,8 +1,8 @@
 import { Typography } from "@mui/material";
-import SearchBar from '../SearchBar';
-
-import { textStyles, innerStyle } from "./styles";
 import {motion} from "framer-motion"
+
+import SearchBar from '../SearchBar';
+import { textStyles, innerStyle } from "./styles";
 
 const Header = ()=> (
     <>
@@ -16,7 +16,9 @@ const Header = ()=> (
             animate={{y:0}} 
             align='center'>
             Land your 
-            <Typography color='primary' sx={innerStyle} variant='h5' display='inline' component='span'> Dream Job </Typography> 
+            <Typography color='primary' sx={innerStyle} variant='h5' display='inline' component='span'> 
+                Dream Job 
+            </Typography> 
             with us!
         </Typography>
         <SearchBar/>
