@@ -6,7 +6,8 @@ const ComponentWrapper = {
         mobile: 'column',
         tablet: 'column',
         laptop: 'row'
-    }
+    },
+
 }
 
 export {

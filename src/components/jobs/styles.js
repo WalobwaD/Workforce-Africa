@@ -96,9 +96,9 @@ const requirementsText = {
     fontFamily: 'Josefin Sans, sans-serif',
     marginLeft: 1,
     opacity: 1,
-    fontWeight: 600,
+    fontWeight: 400,
     fontSize: {
-        mobile: '0.78rem',
+        mobile: '0.72rem',
         tablet: '1.2rem',
         laptop: '1.2rem'
     }
@@ -124,6 +124,15 @@ const requirementBox = {
 
 }
 
+const signInWarn = {
+    fontSize: {
+        mobile: '0.8rem',
+        tablet: '1rem',
+        laptop: '2rem'
+    },
+    fontFamily: 'Josefin Sans, sans-serif'
+}
+
 export {
     lineBreak,
     jobDesc,
@@ -136,5 +145,6 @@ export {
     backDrop, 
     flexBox, 
     jobTitle, 
-    requirementBox
+    requirementBox,
+    signInWarn
 };

@@ -72,7 +72,7 @@ const Jobs = ({job})=> {
                             ))}
                         </Box>
                         <Link onClick ={handleToggle} sx={requirementsLink} component='button'>
-                        <>APPLY</><ArrowCircleRightSharpIcon color="primary"/>
+                        <>BACK</><ArrowCircleRightSharpIcon color="primary"/>
                         </Link>
 
                     </Backdrop>

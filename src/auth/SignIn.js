@@ -9,7 +9,11 @@ const SignIn = ()=> {
     return (
         <Box sx={boxWrap}>
             <Paper sx={paperStyles} elevation={8}>
-                <Typography color='secondary' variant='h4' component='h2'>
+                <Typography 
+                    sx={{fontFamily: 'Josefin Sans, sans-serif'}} 
+                    color='secondary' 
+                    variant='h4' 
+                    component='h2'>
                     Welcome to WorkForce Africa!
                 </Typography>
                 <Typography color='secondary' variant="h6" component='h5'>Our Services:</Typography>

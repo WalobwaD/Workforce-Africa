@@ -38,9 +38,8 @@ const textBox = {
         justifyContent: 'center',
         paddingTop: 3,
         fontWeight: 550,
-        
-        
-
+        color: '#636365',
+        fontFamily: 'Josefin Sans, sans-serif',
     }
 
 }

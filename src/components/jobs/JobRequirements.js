@@ -1,4 +1,4 @@
-import { Typography, Box, Link } from "@mui/material"
+import { Typography, Box} from "@mui/material"
 import {CheckCircle} from "@mui/icons-material"
 
 import { requirementBox, requirementsText } from "./styles";
