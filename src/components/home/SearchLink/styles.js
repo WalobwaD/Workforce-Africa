@@ -6,6 +6,9 @@ const linkBox = {
 
 }
 
+const linkWrap = {
+    textDecoration: 'none',
+}
 const iconBox ={
     zIndex: 1,
 
@@ -13,7 +16,7 @@ const iconBox ={
 
 const icon = {
     fontSize: {
-        mobile: 45,
+        mobile: 46,
         tablet: 70,
         laptop: 60
     }
@@ -27,7 +30,7 @@ const textBox = {
         laptop: -2.5
     },
     padding: {
-        mobile: 0.9,
+        mobile: 0.7,
         tablet: 0.9,
         laptop: 1
     },
@@ -36,7 +39,6 @@ const textBox = {
     '&:hover': {
         backgroundColor: '#FD510C',
         opacity: 0.7,
-        color: '#636365'
 
     }
 }
@@ -49,7 +51,7 @@ const searchText = {
         mobile: '0.7rem',
         tablet: '0.8rem',
         laptop: '1rem'
-    }
+    },
 
 }
 export {
@@ -57,5 +59,6 @@ export {
     textBox,
     iconBox,
     icon,
-    searchText
+    searchText,
+    linkWrap
 }
