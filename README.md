@@ -1,4 +1,4 @@
-<h1>WorkForce Africa | Job Search</h1>
+<h1 align='center'>WorkForce Africa | Job Search</h1>
 <p>The website allows you to sign in using your google account and access various job openings offered by the WorkForce Africa.</p>
 
 > Features:
