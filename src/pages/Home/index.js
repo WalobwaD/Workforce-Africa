@@ -15,20 +15,18 @@ const Home =()=>{
 
     return (
         <>
-        <SignInProvider>
-            <ThemeProvider theme={theme}>
-                    <NavBar />
-                    <Box sx={ComponentWrapper}>
-                        <HomeTitle />
-                        <HomeCard />
-                    </Box>
-                    <Footer />
+            <SignInProvider>
+                <ThemeProvider theme={theme}>
+                        <NavBar />
+                        <Box sx={ComponentWrapper}>
+                            <HomeTitle />
+                            <HomeCard />
+                        </Box>
+                        <Footer />
 
 
-            </ThemeProvider>
-        </SignInProvider>
-
-
+                </ThemeProvider>
+            </SignInProvider>
         </>
     )
 }

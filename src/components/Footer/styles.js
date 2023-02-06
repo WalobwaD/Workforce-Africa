@@ -17,6 +17,7 @@ const email = {
         laptop: 0
     }
 }
+
 const iconWrap = {
     display: 'flex',
     alignItems: 'center',
@@ -24,7 +25,8 @@ const iconWrap = {
     '>*' : {
         color: '#FF590E',
         cursor: 'pointer',
-        marginX: 1
+        marginX: 1,
+        boxShadow: '0 0 10px #FF590E'
     },
     marginBottom: 3,
     marginRight: {
@@ -38,6 +40,7 @@ const iconWrap = {
         laptop: 3
     }
 }
+
 const boxWrap ={
     flexGrow:1,
     position: {
@@ -93,6 +96,8 @@ const paperStyles = {
         laptop: 20
     }
 }
+
+
 export {
     iconWrap, 
     boxWrap,

@@ -1,4 +1,7 @@
+import { useContext } from "react";
+
 import {Box, Paper, Typography} from "@mui/material"
+
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -7,11 +10,8 @@ import EmailIcon from '@mui/icons-material/Email';
 
 import logo from "../NavBar/logo.png"
 import { iconWrap, boxWrap, image, paperStyles, email } from "./styles"
-
-import { useContext } from "react";
 import {SignInContext} from "../../context/googleSignInContext"
 
-// import {LinkedInIcon, InstagramIcon, TwitterIcon, FacebookIcon, EmailIcon} from "@mui/icons-material"
 const Footer = ()=> {
     const {userName} = useContext(SignInContext)
     return (

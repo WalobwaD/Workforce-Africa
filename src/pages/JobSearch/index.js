@@ -18,8 +18,7 @@ import { SignInProvider } from '../../context/googleSignInContext';
 
 
 
-function JobSearch() {
-
+const JobSearch = ()=> {
 
   return (
     <SignInProvider>

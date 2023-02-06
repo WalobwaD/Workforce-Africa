@@ -1,8 +1,11 @@
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import {Box, Typography} from "@mui/material"
-import { Link } from 'react-router-dom';
 import {iconBox, linkBox, textBox, searchText, linkWrap, icon} from "./styles"
+
+import { Link } from 'react-router-dom';
+
 const SearchLink = ()=> {
+    
     return (
         <Box 
             sx={linkWrap}
