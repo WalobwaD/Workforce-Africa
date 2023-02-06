@@ -21,7 +21,7 @@ export const SignInProvider = ({children})=>{
 
     useEffect(()=>{
         setUser(localStorage.getItem('Email'))
-        setUser(localStorage.getItem('Name'))
+        setUserName(localStorage.getItem('Name'))
     
     }, [])
 

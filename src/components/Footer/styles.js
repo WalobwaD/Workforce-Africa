@@ -23,7 +23,8 @@ const iconWrap = {
     justifyContent: 'center',
     '>*' : {
         color: '#FF590E',
-        cursor: 'pointer'
+        cursor: 'pointer',
+        marginX: 1
     },
     marginBottom: 3,
     marginRight: {
