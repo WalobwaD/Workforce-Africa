@@ -15,3 +15,16 @@
 
 <img src='./DisplayPhoto.png'/>
 
+> Libraries and FrameWorks used.
+
+- ReactJS for building the interactive UI
+
+- Used Material UI v6 for Styling of the application
+
+- Implemented Context API for state management
+
+- Used Firebase as Baas to implement oAuth2
+
+- React Router for routing of the pages
+
+- Framer motion for animation
