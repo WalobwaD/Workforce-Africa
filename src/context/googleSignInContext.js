@@ -7,22 +7,26 @@ export const SignInContext = createContext()
 
 export const SignInProvider = ({children})=>{
     const [currentUser, setUser] = useState('')
-
+    const [userName, setUserName] = useState('')
+ 
     let handleClick = ()=> {
         signInWithPopup(auth, provider).then((data)=>{
             setUser(data.user.email)
+            setUserName(data.user.displayName)
             localStorage.setItem('Email', data.user.email)
+            localStorage.setItem('Name', data.user.displayName)
     
         })
     }
 
     useEffect(()=>{
         setUser(localStorage.getItem('Email'))
+        setUser(localStorage.getItem('Name'))
     
     }, [])
 
     return (
-        <SignInContext.Provider value={{currentUser, handleClick}}>
+        <SignInContext.Provider value={{currentUser, handleClick, userName}}>
           {children}
         </SignInContext.Provider>
       );

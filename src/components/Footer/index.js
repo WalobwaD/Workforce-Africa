@@ -13,11 +13,11 @@ import {SignInContext} from "../../context/googleSignInContext"
 
 // import {LinkedInIcon, InstagramIcon, TwitterIcon, FacebookIcon, EmailIcon} from "@mui/icons-material"
 const Footer = ()=> {
-    const {currentUser} = useContext(SignInContext)
+    const {userName} = useContext(SignInContext)
     return (
         <Box sx={boxWrap}>
             <Paper sx={paperStyles}>
-                <Typography color='primary' sx={email} variant='h6' component='h2'>{currentUser}</Typography>
+                <Typography color='primary' sx={email} variant='h6' component='h2'>{userName}</Typography>
                 <Box
                     component='img'
                     src={logo}
