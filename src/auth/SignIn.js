@@ -1,12 +1,18 @@
-import { Button, Box, Paper, Typography } from "@mui/material"
 import { useContext } from "react";
-import { SignInContext } from "../context/googleSignInContext";
-import { boxWrap, paperStyles, textBox, googleButton } from "./signInStyles";
+
+import { Button, Box, Paper, Typography } from "@mui/material"
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import GoogleIcon from '@mui/icons-material/Google';
+
+import { SignInContext } from "../context/googleSignInContext";
+import { boxWrap, paperStyles, textBox, googleButton } from "./signInStyles";
+
 const SignIn = ()=> {
+
     const {handleClick} = useContext(SignInContext)
+
     return (
+
         <Box sx={boxWrap}>
             <Paper sx={paperStyles} elevation={8}>
                 <Typography 

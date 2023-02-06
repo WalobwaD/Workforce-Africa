@@ -23,8 +23,6 @@ const Home =()=>{
                             <HomeCard />
                         </Box>
                         <Footer />
-
-
                 </ThemeProvider>
             </SignInProvider>
         </>

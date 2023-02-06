@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { Typography, Box } from "@mui/material"
+
 import {motion} from "framer-motion"
 
 import { title, titleWrap, flexBox } from "./styles";
@@ -8,7 +9,9 @@ import SignIn from "../../../auth/SignIn";
 import { SignInContext } from "../../../context/googleSignInContext";
 
 const HomeTitle =()=> {
+
     const {currentUser} = useContext(SignInContext)
+    
     return (
         <>
         {currentUser?         

@@ -1,8 +1,12 @@
 import { Typography, Box, Paper } from "@mui/material"
-import {paperStyles, paperWrap, subtitleStyle, title} from "./styles"
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+
 import {motion} from "framer-motion"
+
+import {paperStyles, paperWrap, subtitleStyle, title} from "./styles"
+
 const HomeCard =()=>{
+    
     return (
         <Box 
             component={motion.div}

@@ -1,14 +1,20 @@
+import { useContext } from "react";
+
 import {Link} from "react-router-dom"
-import { linkStyle } from "./styles"
 import {Box} from "@mui/material"
 import HomeIcon from '@mui/icons-material/Home';
-import LogOut from "../../../auth/LogOut";
 import ScreenSearchDesktopIcon from '@mui/icons-material/ScreenSearchDesktop';
-import { useContext } from "react";
-import {SignInContext} from "../../../context/googleSignInContext"
+
 import {motion} from "framer-motion"
+
+import { linkStyle } from "./styles"
+import LogOut from "../../../auth/LogOut";
+import {SignInContext} from "../../../context/googleSignInContext"
+
 const NavLinks =()=>{
+
     const {currentUser} = useContext(SignInContext)
+    
     return (
         <>
             {currentUser ? 

@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Button, Grid, Link, Backdrop, Box, Paper, Typography} from "@mui/material";
 import {paperStyles, buttonBox, applyButton, backDrop, flexBox, jobTitle, requirementsLink, jobLocation, jobDesc, lineBreak} from "./styles"
 import ArrowCircleRightSharpIcon from '@mui/icons-material/ArrowCircleRightSharp';
+
 //JobRequirements component import
 import JobRequirements from "./JobRequirements";
 import {motion} from "framer-motion"
